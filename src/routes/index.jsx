@@ -11,11 +11,11 @@ export const AppRoutes = () => {
       <Routes>
         {knownUser ? (
           <>
-            <Route path="/" element={<Welcome />} />
+            <Route path="/" element={<WelcomeBack />} />
           </>
         ) : (
           <>
-            <Route path="/" element={<WelcomeBack />} />
+            <Route path="/" element={<Welcome />} />
           </>
         )}
         <Route path="*" element={<Page404/>}/>
