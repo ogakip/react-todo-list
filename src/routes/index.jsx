@@ -1,4 +1,5 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Page404 } from "../pages/404";
 import { Welcome } from "../pages/welcome";
 import { WelcomeBack } from "../pages/welcomeBack";
 
@@ -17,6 +18,7 @@ export const AppRoutes = () => {
             <Route path="/" element={<WelcomeBack />} />
           </>
         )}
+        <Route path="*" element={<Page404/>}/>
       </Routes>
     </BrowserRouter>
   );
