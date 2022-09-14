@@ -4,7 +4,7 @@ import { Welcome } from "../pages/welcome";
 import { WelcomeBack } from "../pages/welcomeBack";
 
 export const AppRoutes = () => {
-  const knownUser = JSON.parse(localStorage.getItem("user"));
+  const knownUser = JSON.parse(localStorage.getItem("user") || "{}");
 
   return (
     <BrowserRouter>
